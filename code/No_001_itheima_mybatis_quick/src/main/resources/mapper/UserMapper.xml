@@ -12,4 +12,15 @@
         insert into user values(#{id},#{username},#{password})
     </insert>
 
+    <!--修改操作-->
+    <update id="update" parameterType="domain.User">
+        update user set username=#{username},password=#{password} where id=#{id}
+    </update>
+
+    <!--删除操作-->
+    <delete id="delete" parameterType="int">
+        delete from user where id=#{abc}
+    </delete>
+
+
 </mapper>
