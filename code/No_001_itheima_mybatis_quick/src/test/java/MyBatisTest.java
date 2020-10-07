@@ -52,7 +52,7 @@ public class MyBatisTest {
         //获得session工厂对象
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
         //获得session回话对象
-        SqlSession sqlSession = sqlSessionFactory.openSession(true);
+        SqlSession sqlSession = sqlSessionFactory.openSession(true);//在此设置为 true ，后面就不用手动提交
         //执行操作  参数：namespace+id
         sqlSession.insert("userMapper.save",user);
 
