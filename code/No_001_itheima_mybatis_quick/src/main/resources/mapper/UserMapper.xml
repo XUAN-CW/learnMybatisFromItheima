@@ -7,4 +7,9 @@
         select * from user
     </select>
 
+    <!--插入操作-->
+    <insert id="save" parameterType="domain.User">
+        insert into user values(#{id},#{username},#{password})
+    </insert>
+
 </mapper>
