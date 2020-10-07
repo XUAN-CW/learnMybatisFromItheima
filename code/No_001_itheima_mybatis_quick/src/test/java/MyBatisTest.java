@@ -109,4 +109,21 @@ public class MyBatisTest {
         sqlSession.close();
     }
 
+    @Test
+    //查询一个对象
+    public void test5() throws IOException {
+        //获得核心配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
+        //获得session工厂对象
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        //获得session回话对象
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        //执行操作  参数：namespace+id
+        User user = sqlSession.selectOne("userMapper.findById", 1);
+        //打印数据
+        System.out.println(user);
+        //释放资源
+        sqlSession.close();
+    }
+
 }

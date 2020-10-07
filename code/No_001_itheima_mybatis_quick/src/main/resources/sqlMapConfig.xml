@@ -5,6 +5,10 @@
     <!--通过properties标签加载外部properties文件-->
     <properties resource="jdbc.properties"></properties>
 
+    <!--自定义别名-->
+    <typeAliases>
+        <typeAlias type="domain.User" alias="user"></typeAlias>
+    </typeAliases>
 
     <!--数据源环境-->
     <environments default="developement">

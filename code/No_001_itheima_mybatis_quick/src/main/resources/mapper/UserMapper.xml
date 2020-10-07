@@ -22,5 +22,10 @@
         delete from user where id=#{abc}
     </delete>
 
+    <!--根据id进行查询-->
+    <select id="findById" resultType="user" parameterType="int">
+        select * from user where id=#{id}
+    </select>
+
 
 </mapper>
