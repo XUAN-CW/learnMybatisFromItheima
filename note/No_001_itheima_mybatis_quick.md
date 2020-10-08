@@ -2,11 +2,11 @@
 
 #### 1.1原始jdbc操作（查询数据）
 
-![](img\图片1.png)
+![](No_001_itheima_mybatis_quick\图片1.png)
 
 #### 1.2原始jdbc操作（插入数据）
 
-![](img\图片2.png)
+![](No_001_itheima_mybatis_quick\图片2.png)
 
 #### 1.3 原始jdbc操作的分析
 
@@ -42,7 +42,7 @@ mybatis通过xml或注解的方式将要执行的各种 statement配置起来，
 
 MyBatis官网地址：<http://www.mybatis.org/mybatis-3/> 
 
-![](img\图片3.png)
+![](No_001_itheima_mybatis_quick\图片3.png)
 
 **MyBatis开发步骤：**
 
@@ -93,7 +93,7 @@ MyBatis官网地址：<http://www.mybatis.org/mybatis-3/>
 
 2)  创建user数据表
 
-![](img\图片5.png)
+![](No_001_itheima_mybatis_quick\图片5.png)
 
 3) 编写User实体
 
@@ -180,7 +180,7 @@ sqlSession.close();
 
 ### 3. MyBatis的映射文件概述
 
-![](img\图片6.png)
+![](No_001_itheima_mybatis_quick\图片6.png)
 
 ### 4. MyBatis的增删改查操作
 
@@ -312,7 +312,7 @@ sqlSession.close();
 
 #### 5.1 MyBatis核心配置文件层级关系
 
-![](img\图片7.png)
+![](No_001_itheima_mybatis_quick\图片7.png)
 
 
 
@@ -322,7 +322,7 @@ sqlSession.close();
 
 数据库环境的配置，支持多环境配置
 
-![](img\图片8.png)
+![](No_001_itheima_mybatis_quick\图片8.png)
 
 其中，事务管理器（transactionManager）类型有两种：
 
@@ -362,21 +362,21 @@ sqlSession.close();
 
 实际开发中，习惯将数据源的配置信息单独抽取成一个properties文件，该标签可以加载额外配置的properties文件
 
-  ![](img\图片9.png)
+  ![](No_001_itheima_mybatis_quick\图片9.png)
 
 **4)typeAliases标签**
 
 类型别名是为Java 类型设置一个短的名字。原来的类型名称配置如下
 
-![](img\图片10.png)
+![](No_001_itheima_mybatis_quick\图片10.png)
 
 配置typeAliases，为com.itheima.domain.User定义别名为user
 
-![](img\图片11.png)
+![](No_001_itheima_mybatis_quick\图片11.png)
 
 上面我们是自定义的别名，mybatis框架已经为我们设置好的一些常用的类型的别名
 
-![](img\图片12.png)
+![](No_001_itheima_mybatis_quick\图片12.png)
 
 #### 5.3 知识小结
 
@@ -403,7 +403,7 @@ mappers标签：加载映射配置
 environments标签：数据源环境配置标签
 
 
-![](img\图片13.png)
+![](No_001_itheima_mybatis_quick\图片13.png)
 
 ### 6.MyBatis相应API
 

@@ -17,7 +17,7 @@ Mapper 接口开发需要遵循以下规范：
 
 ### 编写UserMapper接口
 
-![演示文稿1](笔记/演示文稿1.png)
+![演示文稿1](No_002_itheima_mybatis_dao/演示文稿1.png)
 
 
 
